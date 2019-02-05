@@ -2,7 +2,7 @@
   margin-right: 0px;
 }
 
-.svgCentered {
+.svgCentered{
   display: flex; 
   justify-content: center;
 }
@@ -33,4 +33,15 @@
 }
 .fa.fa-envelope:hover{
   opacity: 0.6;
+}
+
+@media (max-width: 384px){
+ .headerText{
+   font-size: 1.0rem;
+ }
+}
+@media (max-width: 324px){
+ .headerText{
+   font-size: 0.8rem;
+ }
 }
