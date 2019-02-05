@@ -7,15 +7,6 @@ $(function () {
     $('[data-toggle="tooltip"]').tooltip();
 
 
-    /* =========================================
-     * counters
-     *  =======================================*/
-
-    $('.counter').counterUp({
-        delay: 10,
-        time: 1000
-    });
-
     /* =================================================
      * Preventing URL update on navigation link click
      *  ==============================================*/
@@ -93,7 +84,7 @@ $(function () {
 
         var categoryToFilter = $(this).attr('data-filter');
 
-        $('.reference-item').each(function () {
+        $('.mywork-item').each(function () {
 
             if ($(this).data('category') === categoryToFilter || categoryToFilter === 'all') {
                 $(this).show();
@@ -106,19 +97,19 @@ $(function () {
 
 
     /* =========================================
-     * reference functionality
+     * mywork functionality
      *  =======================================*/
-    $('.reference a').on('click', function (e) {
+    $('.mywork a').on('click', function (e) {
 
         e.preventDefault();
 
-        var title = $(this).find('.reference-title').text(),
-            description = $(this).siblings('.reference-description').html();
+        var title = $(this).find('.mywork-title').text(),
+            description = $(this).siblings('.mywork-description').html();
 
         $('#detail-title').text(title);
         $('#detail-content').html(description);
 
-        var images = $(this).siblings('.reference-description').data('images').split(',');
+        var images = $(this).siblings('.mywork-description').data('images').split(',');
         if (images.length > 0) {
             sliderContent = '';
             for (var i = 0; i < images.length; ++i) {
@@ -134,7 +125,7 @@ $(function () {
 
     function openReference(sliderContent) {
         $('#detail').slideDown();
-        $('#references-masonry').slideUp();
+        $('#mywork-masonry').slideUp();
 
 
         if (sliderContent !== '') {
@@ -157,7 +148,7 @@ $(function () {
 
 
     function closeReference() {
-        $('#references-masonry').slideDown();
+        $('#mywork-masonry').slideDown();
         $('#detail').slideUp();
     }
 
@@ -202,36 +193,7 @@ $(function () {
         $(this).removeClass($(this).data('animate-hover'));
     });
 
-/* =========================================
-     * for demo purpose
-     *  =======================================*/
 
-    var stylesheet = $('link#theme-stylesheet');
-    $("<link id='new-stylesheet' rel='stylesheet'>").insertAfter(stylesheet);
-    var alternateColour = $('link#new-stylesheet');
-
-    if ($.cookie("theme_csspath")) {
-        alternateColour.attr("href", $.cookie("theme_csspath"));
-    }
-
-    $("#colour").change(function () {
-
-        if ($(this).val() !== '') {
-
-            var theme_csspath = 'css/style.' + $(this).val() + '.css';
-
-            alternateColour.attr("href", theme_csspath);
-
-            $.cookie("theme_csspath", theme_csspath, {
-                expires: 365,
-                path: document.URL.substr(0, document.URL.lastIndexOf('/'))
-            });
-
-        }
-
-        return false;
-    });
 
 });
-
 

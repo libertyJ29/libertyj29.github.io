@@ -10,6 +10,7 @@
 .fa{
   line-height:45px;
 }
+
 .fab{
   line-height:45px;
 }
@@ -20,6 +21,7 @@
   transition: .8s ease;	
   font-size: 37px;
 }
+
 .fa.fa-envelope{
   border-radius: 50%;
 
@@ -31,6 +33,7 @@
 	
   opacity: 0.6;
 }
+
 .fa.fa-envelope:hover{
   opacity: 0.6;
 }
@@ -40,6 +43,7 @@
    font-size: 1.0rem;
  }
 }
+
 @media (max-width: 324px){
  .headerText{
    font-size: 0.8rem;
