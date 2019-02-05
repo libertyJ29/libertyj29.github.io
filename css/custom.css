@@ -1,0 +1,36 @@
+.row-no-margin-right{
+  margin-right: 0px;
+}
+
+.svgCentered {
+  display: flex; 
+  justify-content: center;
+}
+
+.fa{
+  line-height:45px;
+}
+.fab{
+  line-height:45px;
+}
+
+.fab.fa-github{
+  border-radius: 50%;
+
+  transition: .8s ease;	
+  font-size: 37px;
+}
+.fa.fa-envelope{
+  border-radius: 50%;
+
+  transition: .8s ease;	
+ font-size: 32px;
+}
+
+.fab.fa-github:hover{
+	
+  opacity: 0.6;
+}
+.fa.fa-envelope:hover{
+  opacity: 0.6;
+}
