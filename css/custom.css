@@ -49,3 +49,57 @@
    font-size: 0.8rem;
  }
 }
+
+#filter li.active a, #filter li:hover a {
+    color: #fff;
+    text-decoration: none;
+    background: #111;
+}
+
+#filter li a {
+    color: #111;
+}
+
+a {
+    color: #777;
+    text-decoration: none;
+}
+
+a:hover, a:focus {
+    color: #888;
+}
+
+.about-section .progress .progress-bar{
+    background:#777;
+
+}
+
+#filter li{
+    display:inline-block;
+    list-style-type:none;
+    font-family:"Roboto Slab",serif;
+    margin-bottom:30px;
+    border-top:solid 1px #bbb;
+    border-bottom:solid 1px #bbb;
+    margin:0 10px 20px;
+    -webkit-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover {
+    color: #333;
+    border-top-color: #777;
+}
+
+.btn-outline-primary {
+    color: #777;
+    background-color: transparent;
+    background-image: none;
+    border-color: #bbb;
+}
+
+.btn-outline-primary:hover{
+    color:#fff;
+    background-color:#111;
+    border-color:#111;
+}
