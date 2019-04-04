@@ -5,27 +5,28 @@
 <meta id="meta" name="viewport"
 	content="width=device-width, initial-scale=1.0">
 
+<link rel="shortcut icon" href="img/favicon.ico">
+
+
 <link href="https://fonts.googleapis.com/css?family=Raleway"
 	rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Qwigley"
 	rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" 
+	rel="stylesheet">
 
-<link rel="stylesheet"
-	href="https://libertyj29.github.io/css/owl.carousel.css">
+<link href="css/owl.carousel.css" rel="stylesheet">
 
-<link rel="stylesheet"
-	href="owl.theme.default.css">
+<link href="css/owl.theme.default.css" rel="stylesheet">
 
-<link rel="stylesheet"
-	href="https://libertyj29.github.io/css/bootstrap.min.css">
-
-<link rel="stylesheet" href="https://libertyj29.github.io/css/style.css">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 
 <!-- https://daneden.github.io/animate.css/ -->
-<link rel="stylesheet" href="animate.css">
+<link rel="stylesheet" href="css/animate.css">
+<!--link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" rel="stylesheet"-->
+
 
 <script
 	src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -39,1765 +40,28 @@
 <script src="https://libertyj29.github.io/js/jquery.waypoints.min.js"></script>
 
 
+<script src="js/custom.js"></script>
 
 
-
+<link rel="stylesheet"
+	href="css/styles.css">
 
 <style>
+[data-animate]{
+	visibility:hidden
+}
+
+.animated{
+	visibility:visible;
+	-webkit-animation-duration:1.5s;
+	animation-duration:1.5s
+}
+
 body {
-	font-family: raleway, sans-serif;
-/*font-family: 'Shadows Into Light', cursive !important;*/
-	color: #666;
-	font-size: 17px;
-	line-height: 23px;
-	/*margin: 15px 0;*/
-	-webkit-font-smoothing: antialiased;
-}
-
-/*Gallery section*/
-.mywork .overlay:hover {
-	opacity: 0.2;
-}
-
-.mywork .overlay {
-	background: rgba(0, 0, 0, 0) !important;
-	/*was 0,0,0,0.7 for black overlay*/
-}
-
-.mywork:hover img {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
-
-.mywork .myserviceoverlay {
-	background: rgba(0, 0, 0, 0) !important;
-	color: #eee;
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
-	-webkit-transform: none;
-	transform: none;
-	padding: 15px;
-	opacity: 1;
-}
-
-.mywork .myserviceoverlay p {
-	color: #fff
-}
-
-.mywork:hover .myserviceoverlay {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none
-}
-
-/*Services section*/
-.myServices .overlay:hover {
-	opacity: 0.2;
-}
-
-.myServices .overlay {
-	background: rgba(0, 0, 0, 0) !important;
-	/*was 0,0,0,0.7 for black overlay*/
-}
-
-.myServices:hover img {
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-}
-
-.myServices .myserviceoverlay {
-	background: rgba(0, 0, 0, 0) !important;
-	color: #eee;
-	-webkit-transform: scale(1.2);
-	transform: scale(1.2);
-	background: rgba(0, 0, 0, 0.7);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: all 0.4s;
-	transition: all 0.4s;
-	-webkit-transform: none;
-	transform: none;
-	padding: 15px;
-	opacity: 1;
-}
-
-.myServices .myserviceoverlay p {
-	color: #fff
-}
-
-.myServices:hover .myserviceoverlay {
-	opacity: 1;
-	-webkit-transform: none;
-	transform: none;
-}
-
-.myServices {
-	margin-bottom: 30px;
-	overflow: hidden
-}
-
-@media ( max-width : 767.98px) {
-	.myServices {
-		max-width: 350px;
-		margin: 0 auto;
-		margin-bottom: 30px
-	}
-}
-
-.myServices a {
-	width: 100%;
-	height: 100%;
-	position: relative;
-	display: block
-}
-
-.myServices h3 {
-	font-weight: 400
-}
-
-.myServices img {
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s
-}
-
-#filter li {
-	display: inline-block;
-	list-style-type: none;
-	font-family: raleway, sans-serif;
-	margin-bottom: 30px;
-	border-top: solid 1px #bbb;
-	border-bottom: solid 1px #bbb;
-	margin: 0 10px 20px;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.img-logo {
-	margin: 15px 0;
-}
-
-.links {
-	font-size: 17px;
-	line-height: 28px;
-	color: #666;
-	text-transform: uppercase;
-	font-weight: 300;
-	font-size: 16px;
-}
-
-li {
-	display: inline;
-}
-
-.menu-element {
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-.mainlogo:hover {
-	/*	-webkit-animation: heartBeat 3s;
-    	animation: heartBeat 3s;*/
-	
-}
-
-.scrolluplink:hover {
-	-webkit-animation: heartBeat 3s !important;
-	animation: heartBeat 3s !important;
-}
-
-.center-image {
-	text-align: center;
-}
-
-.Aligner-item--fixed {
-	-webkit-box-flex: 0;
-	-webkit-flex: none;
-	-ms-flex: none;
-	flex: none;
-}
-
-.Aligner-item {
-	-webkit-box-flex: 1;
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
-}
-
-.Aligner {
-	display: -webkit-box;
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-webkit-align-items: center;
-	-ms-flex-align: center;
-	align-items: center;
-	/*min-height: 24em;*/
-	-webkit-box-pack: center;
-	-webkit-justify-content: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	width: 100%;
-}
-
-#scrollUp {
-	position: fixed;
-	right: 40px;
-	font-size: 20px;
-	line-height: 40px;
-	width: 40px;
-	height: 40px;
-	bottom: 40px;
-	opacity: 0.5;
-	background-color: #bca858;
-	color: #fff;
-	text-align: center;
-	-webkit-transition-duration: 500ms;
-	-o-transition-duration: 500ms;
-	transition-duration: 500ms;
-	border-radius: 50%;
-	/*-webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, .15);
-	box-shadow: 0 2px 40px 8px rgba(15, 15, 15, .15);*/
-	z-index: 15962536;
-	background: url(top.svg) no-repeat center rgba(15, 15, 15, .15);
-}
-
-#scrollUp:focus, #scrollUp:hover {
-	/*background-color: #000;*/
-	color: #fff;	
-	opacity: 0.7;
-	transition: 0.5s;
-	-webkit-animation: heartBeat 3s;
-	animation: heartBeat 2s;
-}
-
-section {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	marin-bottom: 40px;
-}
-
-.menulinks a {
-	/*roboto slab, sans-serif;*/
-	font-family: raleway, sans-serif;
-	letter-spacing: 2px;
-	text-decoration: none;
-	transition: color .2s ease-in;
-	color: #444;
-	font-size: 15px;
-	font-style:normal;
-	font-weight:300;
-}
-
-.menulinks a:hover {
-	color: #a0a0a0;
-	transition: color .2s ease-out;
-}
-
-.navbar-light .navbar-nav .nav-link {
-	/*roboto slab, sans-serif;*/
-	font-family: raleway, sans-serif;
-	letter-spacing: 1px;
-	text-decoration: none;
-	transition: color .2s ease-in;
-	color: #444;
-}
-
-.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus
-	{
-	color: #a0a0a0;
-	transition: color .2s ease-out;
-}
-
-.whiteText {
-	color: #eee;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
-
-.titleText {
-	font-family: 'Qwigley', cursive;
-	font-style: normal;
-	font-weight: 300;
-	letter-spacing: 15px;
-	text-transform: capitalize;
-}
-
-@media screen and (max-width: 599px) {
- .titleText {
-	font-size:27px;
- }
-}
-
-.copyText {
-	font-family: 'Qwigley', cursive;
-	font-size: 26px;
-}
-
-.quoteText {
-	font-weight: 400 !important;
-	/*text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);*/
-}
-
-.quoteTextAbout1 {
-	/*text-shadow: 2px 0px 1px rgb(188, 190, 195);*/
-	color: #555;
-	font-weight: 600 !important;
-}
-
-.quoteTextAbout2 {
-	/*text-shadow: 3px 2px 1px #555;*/
-	/*color: #eee;*/
-	color: #555; /*was 796f6f*/
-	font-weight: 300 !important;
-}
-
-.fb-icon-gallery img {
-	height: 30px;
-	width: 30px;
-	opacity: 1;
-	-moz-box-shadow: 0px 0px 0px 0;
-	-webkit-box-shadow: 0px 0px 0px 0;
-	box-shadow: 0px 0px 0px 0;
-	padding: 0px
-}
-
-.fb-icon img {
-	height: 34px;
-	width: 34px;
-	opacity: 1;
-	-moz-box-shadow: 0px 0px 0px 0;
-	-webkit-box-shadow: 0px 0px 0px 0;
-	box-shadow: 0px 0px 0px 0;
-	padding: 0px
-}
-
-.fb-icon img:hover {
-	opacity: 0.7;
-	transition: .3s ease;
-	height: 34px;
-	width: 34px;
-	-webkit-animation: heartBeat 3s;
-	animation: heartBeat 3s;
-}
-
-.fb-icon .aps-icon-tooltip:before {
-	border-color: #000
-}
-
-.ig-icon img {
-	height: 34px;
-	width: 34px;
-	opacity: 1;
-	-moz-box-shadow: 0px 0px 0px 0;
-	-webkit-box-shadow: 0px 0px 0px 0;
-	box-shadow: 0px 0px 0px 0;
-	padding: 0px
-}
-
-.ig-icon .aps-icon-tooltip:before {
-	border-color: #000
-}
-
-.ig-icon img:hover {
-	opacity: 0.7;
-	transition: .3s ease;
-	height: 34px;
-	width: 34px;
-	-webkit-animation: heartBeat 3s;
-	animation: heartBeat 3s;
-}
-
-.lorealicon img {
-	opacity: 1;
-	-moz-box-shadow: 0px 0px 0px 0;
-	-webkit-box-shadow: 0px 0px 0px 0;
-	box-shadow: 0px 0px 0px 0;
-	padding: 0px
-}
-
-.lorealicon img:hover {
-	opacity: 0.7;
-	transition: .3s ease;
-	-webkit-animation: heartBeat 3s;
-	animation: heartBeat 3s;
-}
-
-.mywork a {
-	height: auto !important;
-}
-
-.gallery-image {
-	transition-duration: 500ms;
-	border-radius: 3px;
-}
-
-.mywork .overlay {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-
-.myServices .overlay {
-	-webkit-transform: none !important;
-	transform: none !important;
-}
-
-.stylistssections {
-	position: relative;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: 11;
-}
-
-.img-responsive {
-	display: block;
-	max-width: 100%;
-	height: auto;
-}
-
-.bg-grey {	/*off pink background*/
-	background-color: #FdF9Fd !important;
-	/*#FdF9Fd FCF4FC FBF2FB f9eff9 f6f9f9*/
-}
-
-.stylist-container {
-	width: 80%;
-}
-
-.image-slider {
-	display: block;
-	width: 100%;
-	height: auto;
-}
-
-.owl-nav {
-	
-}
-
-.owl-stage {
-	margin: auto;
-}
-
-.item-width {
-	width: 60%;
-}
-
-.owl-carousel .item {
-	float: none;
-	display: inline-block;
-}
-
-.owl-carousel .owl-item {
-	text-align: center;
-}
-
-.owl-carousel .owl-stage {
-	display: flex;
-	align-items: center;
-}
-
-.owl-carousel .caption {
-	text-align: center;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-	background: #111 !important;
-}
-
-.testimonialImg {
-	width: 80px;
-	text-align: center;
-}
-
-@media only screen and (max-width: 575px) {
-	.testimonialImg {
-		width: 40%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-}
-
-a:focus {
-	text-decoration: none !important;
-}
-
-a:hover {
-	text-decoration: none !important;
-}
-
-.row {
-	margin-left: 0px;
-	/* row for stylists was exceeding bounds of scrolbar as ste has no left right border yet */
-	margin-right: 0px;
-}
-
-.bg-img {
-	background-position: center center !important;
-	background-size: cover !important;
-	background-repeat: no-repeat !important;
-	/*background: url("16.jpg");*/
-}
-
-.imgpos {
-	position: relative;
-	z-index: 2;
-	width: 100%;
-}
-
-@media only screen and (min-width: 1200px) {
-	.imgpos {
-		height: 700px;
-	}
-}
-
-@media only screen and (max-width: 1199px) and (min-width: 768px) {
-	.imgpos {
-		height: 600px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.imgpos {
-		height: 500px;
-	}
-}
-
-footer {
-	margin-top: 30px;
-}
-
-.top-header-area {
-	position: relative;
-	z-index: 1;
-	background-color: #252525;
-	width: 100%;
-	height: auto;
-}
-.top-header-area-Bottom {
-	margin-bottom: 20px;
-}
-
-.head-padding {
-	margin-left: 20px;
-	margin-right: 20px;
-	margin-top: 3px;
-}
-
-.phoneimg {
-	color: white;
-	width: 16px;
-	/*-moz-transform: scale(-1, -1);
-    -o-transform: scale(-1, -1);
-    -webkit-transform: scale(-1, -1);
-    transform: scale(-1, -1);
-*/
-	-webkit-transform: rotate(100deg);
-	-ms-transform: rotate(100deg);
-	transform: rotate(100deg);
-}
-
-@media screen and (max-width: 599px) {
-	.headerText {
-		font-size: 12px; margin-top-4px !important;
-		padding-bottom: 1px;
-	}
-	/*.phonenumberWhite:hover {
-	color: #ffffff;
-	font-size:13px;
-	transition: all 0.3s;
-	}*/
-}
-
-@media screen and (max-width: 430px) {
-	.headerText {
-		font-size: 11px; padding-top-4px !important;
-		padding-bottom: 1px;
-	}
-	/*.phonenumberWhite:hover {
-	color: #ffffff;
-	font-size:12px;
-	transition: all 0.3s;
-	}*/
-}
-
-@media screen and (max-width: 350px) {
-	.headerText {
-		font-size: 10px; padding-top-4px !important;
-		padding-bottom: 1px;
-	}
-	/*.phonenumberWhite:hover {
-	color: #ffffff;
-	font-size:11px;
-	transition: all 0.3s;
-	}*/
-}
-
-@media screen and (max-width: 320px) {
-	.headerText {
-		font-size: 9px; padding-top-4px !important;
-		padding-bottom: 1px;
-	}
-	/*.phonenumberWhite:hover {
-	color: #ffffff;
-	font-size:9px;
-	transition: all 0.3s;
-	}*/
-}
-
-@media screen and (min-width: 600px) {
-	.headerText {
-		font-size: 14px;
-		padding-top: 4px;
-		padding-bottom: 4px;
-	}
-	.phonenumberWhite:hover {
-	/*color: #ffffff;
-	opacity:1 !important;
-	font-size:15px;
-	transition: all 0.3s;*/
-		
-	}
-}
-
-.phonenumberWhite {
-	color: #ffffff;
-}
-
-.phonenumberBlack {
-	color: #000;
-}
-
-.phonenumberBlack:hover {
-	color: #111;
-}
-
-.fullwidthMap {
-	background-image: url("map.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	height: 400px;
-	width: 100%;
-}
-
-.loreal {
-	width: 170px;
-	height: auto;
-}
-
-.col-sm-8 {
-	max-width: 100% !important;
-}
-
-#filter li.active a, #filter li:hover a {
-	color: #fff;
-	text-decoration: none;
-	background: #111;
-}
-
-#filter li a {
-	display: inline-block;
-	padding: 10px;
-	background: none;
-	border: none;
-	cursor: pointer;
-	color: #111;
-	outline: none;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-.flexBoxStyle {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: center;
-}
-
-.lineMargin {
-	margin-bottom: 10px;
-}
-
-.phoneTextSize {
-	font-size: 20px;
-}
-
-.about-slide {
-	position: relative;
-	z-index: 2;
-	width: 100%;
-	height: 650px;
-}
-
-.statistics-section { /*about slide - padding at top above the title */
-	padding-top: 100px;
-	padding-bottom: 120px
-}
-
-@media only screen and (max-width: 500px) {
- .statistics-section { 
-	padding-top: 70px;
- }
-}
-
-.about-slide-left-align {
-	text-align: left;
-}
-
-.noPaddingTop {
-	padding-top: 0px;
-}
-
-.owl-carousel .item {
-	float: none;
-	display: block;
-}
-
-.alignRight {
-	text-align: right !important;
-}
-
-.inlineBlock {
-	display: inline-block;
-}
-
-@media only screen and (max-width: 567px) {
-	.mobilemenu {
-		display: block;
-		text-align: right; /* menu icon on right side */
-	}
-}
-
-@media only screen and (min-width: 568px) {
-	.mobilemenu {
-		display: none !important;
-	}
-}
-
-@media only screen and (max-width: 567px) {
-	.landscapemenu {
-		display: none !important;
-	}
-}
-
-@media only screen and (min-width: 568px) {
-	.landscapemenu {
-		display: block;
-		margin-top: 30px;
-	}
-}
-
-/*nav.navbar {*/
-navBorderBottom {
-	border-bottom: 1px solid #e6e6e6;
-}
-
-nav.navbar {
-	border-bottom: 0px;
-}
-
-.bg-light {
-	background-color: #ffffff !important;
-}
-
-.noPaddingStart {
-	padding-inline-start: 0px
-}
-
-.icon-bar {
-	width: 22px;
-	height: 2px;
-	background-color: #B6B6B6;
-	display: block;
-	transition: all 0.2s;
-	margin-top: 4px
-}
-
-.navbar-toggler {
-	border: none;
-	background: transparent !important;
-}
-
-.navbar-toggler .top-bar {
-	transform: rotate(45deg);
-	transform-origin: 10% 10%;
-}
-
-.navbar-toggler .middle-bar {
-	opacity: 0;
-}
-
-.navbar-toggler .bottom-bar {
-	transform: rotate(-45deg);
-	transform-origin: 10% 90%;
-}
-
-.navbar-toggler.collapsed .top-bar {
-	transform: rotate(0);
-}
-
-.navbar-toggler.collapsed .middle-bar {
-	opacity: 1;
-}
-
-.navbar-toggler.collapsed .bottom-bar {
-	transform: rotate(0);
-}
-
-.owl-stage {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: inline-block;
-}
-
-.owl-item {
-	display: inline-block !important;
-	height: auto !important;
-}
-
-@media only screen and (max-width: 999px) {
-	.owl-carousel .owl-stage {
-		display: flex;
-		align-items: flex-start; /*was align center, for vertical center*/
-	}
-}
-
-.noPaddingBottom {
-	padding-bottom: 0px;
-	margin-bottom: 40px;
-}
-
-.stylistName {
-	font-size: 24px;
-}
-
-@media only screen and (max-width: 575px) {
-	.stylistName {
-		display: inline-block; /* center the stylist name on mobile */
-		width: 100%;
-		text-align: center;
-		padding-top: 10px;
-	}
-}
-
-/*effect-underline*/
-a.effect-underline:after {
-	content: '';
-	display: inline-block;
-	height: 1em;
-	width: 100%;
-	border-bottom: 1px solid;
-	opacity: 0;
-	-webkit-transition: opacity 0.45s, -webkit-transform 0.65s;
-	transition: opacity 0.45s, transform 0.65s;
-	-webkit-transform: scale(0, 1);
-	transform: scale(0, 1);
-}
-
-.effect-underlineN {
-	vertical-align:top;
-}
-
-a.effect-underline:hover:after {
-	opacity: 0.8;
-	-webkit-transform: scale(1);
-	transform: scale(1);
-	color: #a0a0a0;
-}
-
-.wrapper {
-	display: inline-block;
-}
-
-.owl-carousel .owl-item {
-	text-align: left;
-}
-
-.about-text {
-	margin-left: 10%;
-	font-size: 20px;
-	margin-right: 15px;
-}
-
-@media only screen and (max-width: 767px) {
-	.about-text {
-		margin-left: 35px;
-		margin-right: 35px;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.about-text {
-		font-size: 17px;
-	}
-}
-
-.about-text-width1 {
-		width: 50%;
-	}
-
-.about-text-width2 {
-		width: 40%;
-	}
-
-@media only screen and (max-width: 499px) {
-	.about-text-width1 {
-		width: 90%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.about-text-width1 {
-		width: 80%;
-	}
-}
-
-@media only screen and (max-width: 499px) {
-	.about-text-width2 {
-		width: 80%;
-	}
-}
-
-@media only screen and (max-width: 768px) {
-	.about-text-width2 {
-		width: 70%;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.mobilepadding {
-		padding-bottom: 20px;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.titlepadding {
-		padding-bottom: 10px;
-	}
-}
-
-@media only screen and (min-width: 576px) {
-	.marginBelowLandscape {
-		margin-bottom: 10px;
-	}
-}
-
-@keyframes heartbeataa
-{
-  0%
-  {
-    transform: scale( .75 );
-  }
-  20%
-  {
-    transform: scale( 1 );
-  }
-  40%
-  {
-    transform: scale( .75 );
-  }
-  60%
-  {
-    transform: scale( 1 );
-  }
-  80%
-  {
-    transform: scale( .75 );
-  }
-  100%
-  {
-    transform: scale( 1 );
-  }
-}
-
-.menulinksb:hover {
-	width: 60px;
-	height: 50px;
-	animation: heartBeat 2s infinite;
-	display: inline;
-}
-
-a.effect-shine {
-	-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .7) 30%, #000
-		50%, rgba(0, 0, 0, .7) 70%);
-	-webkit-mask-size: 200%;
-	animation: shine 5s infinite;
-}
-
-a.effect-shine:hover {
-	color: #ffffff;
-	-webkit-mask-image: none;
-	-webkit-mask-size: unset;
-	animation: none;
-}
-
-.effect-shinea {
-	-webkit-mask-image: linear-gradient(-75deg, rgba(0, 0, 0, .6) 30%, #000
-		50%, rgba(0, 0, 0, .6) 70%);
-	-webkit-mask-size: 200%;
-	animation: shine 4s infinite;
-}
-
-@-webkit-keyframes shine {
-  from {
-    -webkit-mask-position: 130%;
-  }
-  
-  to {
-    -webkit-mask-position: -30%;
-  }
-}
-
-.slide1bg {
-	background-image: linear-gradient(rgba(255, 255, 255, 0.1),
-			rgba(255, 255, 255, 0.1)), url(slide1.jpg);
-}
-
-@media only screen and (max-width: 767px) {
-	.slide1bg {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.4),
-			rgba(255, 255, 255, 0.4)), url(slide1m.jpg);
-	}
-}
-
-.slide2bg {
-	background-image: linear-gradient(rgba(255, 255, 255, 0.2),
-			rgba(255, 255, 255, 0.2)), url(slide2.jpg);
-}
-
-@media only screen and (max-width: 767px) {
-	.slide2bg {
-		background-image: linear-gradient(rgba(255, 255, 255, 0.3),
-			rgba(255, 255, 255, 0.3)), url(slide2m.jpg);
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	.reviewMobileWidth {
-		flex: 0 0 90.666667%;
-		max-width: 90.666667%;
-	}
-}
-
-.gallery-image {
-	height: auto;
-}
-
-.gallery-image-container {
-	width: 100%;
-}
-
-.btn-outline-primary {
-	color: #3b5998;
-	background-color: transparent;
-	background-image: none;
-	border-color: #3b5998;
-}
-
-.btn-outline-primary:hover {
-	color: #eee;
-	background-color: #3b5998;
-	border-color: #3b5998;
-	transition: 1.5s;
-}
-
-.icon-margin-right {
-	margin-right: 40px;
-}
-
-.single-service-area:hover, .single-service-area:focus {
-	border-color: transparent;
-	-webkit-box-shadow: 0 2px 40px 8px rgba(15, 15, 15, .15);
-	box-shadow: 0 2px 40px 8px rgba(15, 15, 15, .15);
-}
-
-.single-service-area {
-	position: relative;
-	z-index: 1;
-	padding: 40px 20px;
-	border: 1px solid #e5e5e5;
-	text-align: center;
-	-webkit-transition-duration: 500ms;
-	-o-transition-duration: 500ms;
-	transition-duration: 500ms;
-}
-
-/*testimonials slider*/
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span
-	{
-	background: #777 !important;
-}
-
-#detail2 {
-	display: none;
-}
-
-#detail2 .close {
-	position: absolute;
-	right: 0;
-	z-index: 999;
-	display: block;
-	width: 50px;
-	height: 50px;
-	margin-bottom: 20px;
-	font-size: 3rem;
-	opacity: 0.3;
-	-webkit-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#detail2 .close:hover {
-	opacity: 1;
-}
-
-@media (max-width: 991.98px){
- nav.navbar {
-     	padding-top: 0px;
-     	padding-bottom: 0px; 
- }
-}
-
-@media (max-width: 460px){
- #filter {
-    	text-align: center;
-    	margin: 20px 0;
-    	margin-left:0px;
-    	margin-right:0px;
-    	font-size: 13px;
- }
-}
-
-@media (max-width: 400px){
- #filter {
-    	font-size: 11px;
- }
-}
-
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    	margin-bottom: .5rem;
-    	font-family: raleway, sans-serif;
-    	font-weight: 700;
-    	line-height: 1.2;
-    	color: inherit;
-}
-
-.serviceViewMore{
-	opacity: 0;
-	word-wrap: break-word;
-}
-
-.myServices .myserviceoverlay p:hover{
-
-}
-
-.serviceViewMore:hover {
-	border: 1px solid;
-}
-
-.myServices:hover .myserviceoverlay .serviceViewMore {
-	border: 1px solid;
-	padding: 10px;
-	border-radius: 25px;
-	opacity: 1;
-	transition: .5s;
-	display: inline-block;
-	font-size: 13px;
-}
-
-@media (max-width: 767px){
- .myServices .myserviceoverlay .serviceViewMore {
-	border: 1px solid;
-	padding: 6px;
-	border-radius: 25px;
-	opacity: 1;
-	transition: .5s;
-	display: inline-block;
-	font-size: 11px;
- }
-
- .myServices:hover .myserviceoverlay .serviceViewMore {
-	font-size: 11px;
-	padding: 6px;
- }
-}
-
-.servicesContainer1{
-	width: 75%;
-	margin: auto;
-	text-align:left;
-}
-
-.servicesContainer2{
-	width: 85%;
-	margin: auto;
-}
-
-@media (max-width: 767px){
- .servicesContainer2{
-	width: 100%;
-	margin: auto;
- }
- .servicesContainer1{
-	width: 85%;
-	margin: auto;
- }
-}
-
-.title{
-	font-size: 2.4rem;
-}
-
-.logo{
-	width: 300px;
-	height: auto;
-}
-
-.header2 {
-	background-color: #8F7CB1;	/*7F60B6;*/
-	color: white;
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 21px;
-	padding-top: 3px;
-	padding-bottom: 4px;
-}
-
-@media (min-width: 968px){
- .showAboutUsMobile{
-	display: none !important;
- }
-}
-
-
-/*hover over drop down menu*/
-.dropdown:hover > .dropdown-menu {
-    display: block;
-}
-.dropdown > .dropdown-toggle:active {
-    /*Without this, clicking will make it sticky*/
-    pointer-events: none;
-}
-
-.nav .open .dropdown-toggle {
-   color: red !important;
-   background: red !important;
-   border: 2px solid red !important;
-}
-
-/*click options in dropdown menu*/
-.dropdown-item:focus{
-	background-color: #f8f9fa
-}
-
-.dropdown-item:focus{
-	color: #a0a0a0;
-	transition: color .2s ease-out;
-}
-
-.noLetterSpacing {
-	letter-spacing: 0px !important;
-}
-
-.letterSpacingTwo {
-	/*letter-spacing: 2px !important;*/
-}
-
-.dropdown-menu{
-	min-width:0rem;
-}
-
-.dropdown-item{
-	padding: .25rem 1rem;
-}
-
-.dropdown-menu {
-	left: -20px;
+	font-family: raleway, sans-serif !important;
 }
 </style>
 
-
-
-
-
-
-
-
-<script>
-/*!
- * scrollup v2.4.1
- * Url: http://markgoodyear.com/labs/scrollup/
- * Copyright (c) Mark Goodyear â€” @markgdyr â€” http://markgoodyear.com
- * License: MIT
- */
-!function(l,o,e){"use strict";l.fn.scrollUp=function(o){l.data(e.body,"scrollUp")||(l.data(e.body,"scrollUp",!0),l.fn.scrollUp.init(o))},l.fn.scrollUp.init=function(r){var s,t,c,i,n,a,d,p=l.fn.scrollUp.settings=l.extend({},l.fn.scrollUp.defaults,r),f=!1;switch(d=p.scrollTrigger?l(p.scrollTrigger):l("<a/>",{id:p.scrollName,href:"#top"}),p.scrollTitle&&d.attr("title",p.scrollTitle),d.appendTo("body"),p.scrollImg||p.scrollTrigger||d.html(p.scrollText),d.css({display:"none",position:"fixed",zIndex:p.zIndex}),p.activeOverlay&&l("<div/>",{id:p.scrollName+"-active"}).css({position:"absolute",top:p.scrollDistance+"px",width:"100%",borderTop:"1px dotted"+p.activeOverlay,zIndex:p.zIndex}).appendTo("body"),p.animation){case"fade":s="fadeIn",t="fadeOut",c=p.animationSpeed;break;case"slide":s="slideDown",t="slideUp",c=p.animationSpeed;break;default:s="show",t="hide",c=0}i="top"===p.scrollFrom?p.scrollDistance:l(e).height()-l(o).height()-p.scrollDistance,n=l(o).scroll(function(){l(o).scrollTop()>i?f||(d[s](c),f=!0):f&&(d[t](c),f=!1)}),p.scrollTarget?"number"==typeof p.scrollTarget?a=p.scrollTarget:"string"==typeof p.scrollTarget&&(a=Math.floor(l(p.scrollTarget).offset().top)):a=0,d.click(function(o){o.preventDefault(),l("html, body").animate({scrollTop:a},p.scrollSpeed,p.easingType)})},l.fn.scrollUp.defaults={scrollName:"scrollUp",scrollDistance:300,scrollFrom:"top",scrollSpeed:300,easingType:"linear",animation:"fade",animationSpeed:200,scrollTrigger:!1,scrollTarget:!1,scrollText:"Scroll to top",scrollTitle:!1,scrollImg:!1,activeOverlay:!1,zIndex:2147483647},l.fn.scrollUp.destroy=function(r){l.removeData(e.body,"scrollUp"),l("#"+l.fn.scrollUp.settings.scrollName).remove(),l("#"+l.fn.scrollUp.settings.scrollName+"-active").remove(),l.fn.jquery.split(".")[1]>=7?l(o).off("scroll",r):l(o).unbind("scroll",r)},l.scrollUp=l.fn.scrollUp}(jQuery,window,document);
-</script>
-
-
-
-
-
-<script>
-
-//close the mobile nav menu after clicking an option
-$(document).ready(function(){
-	$('.navbar-nav>li>a').on('click', function(){
-    		$('.navbar-collapse').collapse('hide');
-	});
-
-
-//laptop nav menu for services, dropdown on hover
-//https://stackoverflow.com/questions/42183672/how-to-implement-a-navbar-dropdown-hover-in-bootstrap-v4
-function toggleDropdown (e) {
-  const _d = $(e.target).closest('.dropdown'),
-    _m = $('.dropdown-menu', _d);
-  setTimeout(function(){
-    const shouldOpen = e.type !== 'click' && _d.is(':hover');
-    _m.toggleClass('show', shouldOpen);
-    _d.toggleClass('show', shouldOpen);
-    $('[data-toggle="dropdown"]', _d).attr('aria-expanded', shouldOpen);
-  }, e.type === 'mouseleave' ? 100 : 0);
-}
-
-$('body')
-  .on('mouseenter mouseleave','.dropdown',toggleDropdown)
-  .on('click', '.dropdown-menu a', toggleDropdown);
-
-
-
-});
-
-
-
-
-$(document).ready(function(){
-    //scroll to top of page
-    var $navbar = $("#navbar");
-
-    if ($navbar.length) {
-        y_pos = $navbar.offset().top,
-        height = $navbar.height();
-
-
-    $(document).scroll(function() {
-        var scrollTop = $(this).scrollTop();
-
-        if (scrollTop > y_pos + height) {
-            $navbar.addClass("navbar-fixed").animate({
-                top: 0
-            });
-        } else if (scrollTop <= y_pos) {
-            $navbar.removeClass("navbar-fixed").clearQueue().animate({
-                top: "-48px"
-            }, 0);
-        }
-    });
-
-};
-});
-
-
-
-
-// Add smooth scrolling to all links
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-});
-
-
-
-
-$(function () {
-  $.scrollUp({
-    scrollImg: {
-                active: true,
-                type: 'background'
-                },
-    scrollName: 'scrollUp', // Element ID
-    topDistance: '300', // Distance from top before showing element (px)
-    topSpeed: 300, // Speed back to top (ms)
-    animation: 'fade', // Fade, slide, none
-    animationInSpeed: 600, // Animation in speed (ms)
-    animationOutSpeed: 600, // Animation out speed (ms)
-    scrollText: '', // Text for element
-    activeOverlay: false, // Set CSS color to display scrollUp active point, e.g '#00FFFF',
-    animation: 'fade'
-  });
-
-    /* =========================================
-     * filter
-     *  =======================================*/
-
-    $('#filter a').click(function (e) {
-        e.preventDefault();
-
-        $('#filter li').removeClass('active');
-        $(this).parent('li').addClass('active');
-
-        var categoryToFilter = $(this).attr('data-filter');
-
-        $('.mywork-item').each(function () {
-
-            if ($(this).data('category') === categoryToFilter || categoryToFilter === 'all') {
-                $(this).show();
-            } else {
-                $(this).hide();
-            }
-        });
-
-    });
-
-
-    /* =========================================
-     * gallery functionality
-     *  =======================================*/
-    $('.mywork a').on('click', function (e) {
-
-        e.preventDefault();
-
-        var title = $(this).find('.mywork-title').text(),
-            description = $(this).siblings('.mywork-description').html();
-
-        $('#detail-title').text(title);
-        $('#detail-content').html(description);
-
-        var images = $(this).siblings('.mywork-description').data('images').split(',');
-        if (images.length > 0) {
-            sliderContent = '';
-            for (var i = 0; i < images.length; ++i) {
-                sliderContent = sliderContent + '<div class="item"><img src=' + images[i] + ' alt="" class="img-fluid"></div>';
-            }
-        } else {
-            sliderContent = '';
-        }
-
-
-	/* go to top of gallery section when click an image in the gallery*/
-	var aid = $(this).attr("href");
-        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-
-
-
-        openReference(sliderContent);
-
-    });
-
-    function openReference(sliderContent) {
-        $('#detail').slideDown();
-        $('#mywork-masonry').slideUp();
-
-
-/*        if (sliderContent !== '') {
-
-            var slider = $('#detail-slider');
-
-            if (slider.hasClass('owl-loaded')) {
-                slider.trigger('replace.owl.carousel', sliderContent);
-            } else {
-                slider.html(sliderContent);
-                slider.owlCarousel({
-                    nav: false,
-                    dots: true,
-                    items: 1
-                });
-
-            }
-        }*/
-    }
-
-
-
-    function closeReference() {
-        $('#mywork-masonry').slideDown();
-        $('#detail').slideUp();
-    }
-
-    $('#filter button, #detail .close').on('click', function () {
-        closeReference();
-    });
-
-
-
-
-
-
-
-
-
-    /* =========================================
-     * services functionality
-     *  =======================================*/
-    $('.myServices a').on('click', function (e) {
-
-        e.preventDefault();
-
-        var title = $(this).find('.mywork-title2').text(),
-            description = $(this).siblings('.mywork-description2').html();
-
-        $('#detail-title2').text(title);
-        $('#detail-content2').html(description);
-
-        var images = $(this).siblings('.mywork-description2').data('images').split(',');
-       
-        sliderContent = '';
-
-
-	/* go to top of services section when click a services button*/
-	var aid = $(this).attr("href");
-        $('html,body').animate({scrollTop: $(aid).offset().top},'slow');
-
-
-        openReference2(sliderContent);
-
-    });
-
-    function openReference2(sliderContent) {
-        $('#detail2').slideDown();
-        $('#mywork-masonry2').slideUp();
-
-
-/*        if (sliderContent !== '') {
-
-            var slider = $('#detail-slider2');
-
-            if (slider.hasClass('owl-loaded')) {
-                slider.trigger('replace.owl.carousel', sliderContent);
-            } else {
-                slider.html(sliderContent);
-                slider.owlCarousel({
-                    nav: false,
-                    dots: true,
-                    items: 1
-                });
-
-            }
-        }*/
-    }
-
-
-
-    function closeReference2() {
-        $('#mywork-masonry2').slideDown();
-        $('#detail2').slideUp();
-    }
-
-
-    $('#detail2 .close').on('click', function () {
-        closeReference2();
-    });
-
-
-    /* =========================================
-     *  animations
-     *  =======================================*/
-
-    delayTime = 0;
-
-    $('[data-animate]').waypoint(function (direction) {
-        delayTime += 250;
-
-        var element = $(this.element);
-
-        $(this.element).delay(delayTime).queue(function (next) {
-            element.toggleClass('animated');
-            element.toggleClass(element.data('animate'));
-            delayTime = 0;
-            next();
-        });
-
-        this.destroy();
-
-    }, {
-        offset: '90%'
-    });
-    
-    $('[data-animate-hover]').hover(function () {
-        $(this).css({
-            opacity: 1
-        });
-        $(this).addClass('animated');
-        $(this).removeClass($(this).data('animate'));
-        $(this).addClass($(this).data('animate-hover'));
-    }, function () {
-        $(this).removeClass('animated');
-        $(this).removeClass($(this).data('animate-hover'));
-    });
-
-
-
-
-$('.owl-carousel').owlCarousel({
-                    loop:true,
-                    margin:0,
-                    responsiveClass:true,
-		    autoplay:9000,
-		    rewind:true,
-                    navSpeed:3000,
-                    responsive:{
-                        0:{
-                            items:1,
-                            nav:false,
-			    smartSpeed: 1500,
-		            autoplay:9000,
-                            autoplayTimeout:7000,
-                            autoHeight:true
-                        },
-                        400:{
-                            items:1,
-                            nav:false,
-			    smartSpeed: 1500,
-                            autoplay:9000,
-                            autoplayTimeout:7000,
-                            autoHeight:true
-                        },
-                        600:{
-                            items:1,
-                            nav:false,
-			    smartSpeed: 1500,
-	                    autoplay:9000,
-                            autoplayTimeout:7000,
-                            autoHeight:true
-                        },
-                        1000:{
-                            items:1,
-                            nav:false,
-                            loop:true,
-                            autoplay:9000,
-                            autoplayTimeout:7000,  /*how long to show slide onscreen for*/
-			    smartSpeed: 1500, /*transition speed*/
-                            autoplayHoverPause:false,
-			    slideSpeed: 9000,
-                            autoHeight:false
-                        }
-                    }
-                });
-            
-
-});
-
-
-
-
-$(document).ready(function (){
-  // Declare Carousel jquery object
-  var owl = $('.owl-carousel');
-
-  // Carousel initialization
-  owl.owlCarousel({
-
-  });
-
-
-  // add animate.css class(es) to the elements to be animated
-  function setAnimation ( _elem, _InOut ) {
-    // Store all animationend event name in a string.
-    // cf animate.css documentation
-    var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-
-    _elem.each ( function () {
-      var $elem = $(this);
-      var $animationType = 'animated ' + $elem.data( 'animation-' + _InOut );
-
-      $elem.addClass($animationType).one(animationEndEvent, function () {
-        $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
-      });
-    });
-  }
-
-// Fired before current slide change
-  owl.on('change.owl.carousel', function(event) {
-      var $currentItem = $('.owl-item', owl).eq(event.item.index);
-      var $elemsToanim = $currentItem.find("[data-animation-out]");
-
-      setAnimation ($elemsToanim, 'out');
-  });
-
-// Fired after current slide has been changed
-  var round = 0;
-  owl.on('changed.owl.carousel', function(event) {
-
-      var $currentItem = $('.owl-item', owl).eq(event.item.index);
-      var $elemsToanim = $currentItem.find("[data-animation-in]");
-    
-      setAnimation ($elemsToanim, 'in');
-  })
-  
-  owl.on('translated.owl.carousel', function(event) {
-    //console.log (event.item.index, event.page.count);
-    
-      if (event.item.index == (event.page.count - 1))  {
-        if (round < 1) {
-          round++
-        } else {
-          owl.trigger('stop.owl.autoplay');
-          var owlData = owl.data('owl.carousel');
-          owlData.settings.autoplay = false; //don't know if both are necessary
-          owlData.options.autoplay = false;
-          owl.trigger('refresh.owl.carousel');
-        }
-      }
-  });
-
-
-
-
-});
-
-</script>
 </head>
 
 
@@ -1805,18 +69,47 @@ $(document).ready(function (){
 
 
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : '328949214645567',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+
+</script>
+<script async defer src="https://connect.facebook.net/en_US/sdk.js"></script>
+
+ <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="333877740357644"
+    theme_color="#ed1d24"
+    logged_in_greeting="Hello, how can we help you?">
+  </div>
+
 
 
 
 	<header>
 		<div id="top"></div>
 
-		<div class="top-header-area text-white row" data-animate="fadeInDown" >
+		<div class="top-header-area text-white row" data-animate="fadeInDown">
 			<span class="col-7 headerText" style="padding-right: 0px"> 1b
 				Slaughterford Road, Whitehead</span> <span class="col-5"
 				style="padding-left: 0px"><div class="alignRight">
 					<a href="tel:02893 039543" class="effect-shine"><img
-						src="phone.svg" class="phoneimg inlineBlock">
+						src="img\phone.svg" class="phoneimg inlineBlock">
 						<div class="headerText inlineBlock phonenumberWhite">02893
 							039543</div></a>
 
@@ -1824,8 +117,8 @@ $(document).ready(function (){
 		</div>
 
 
-		<div class="top-header-area-Bottom header2" data-animate="fadeInUp" ><!--shake-->
-			<div class="center-image" ><!--animated slideInRight duration-10s delay-2s infinite-->
+		<div class="top-header-area-Bottom header2" data-animate="fadeInUp"><!--shake-->
+			<div class="center-image"><!--animated slideInRight duration-10s delay-2s infinite-->
 				We are Hair Extension Specialists!
 			</div>
 		</div>
@@ -1834,7 +127,7 @@ $(document).ready(function (){
 		<div class="center-image animated bounce">
 			<div class="Aligner">
 				<div class="Aligner-item Aligner-item--fixed img-logo mainlogo">
-					<a href="./index.html"><img src="logo.png" class="logo"></a>
+					<a href="./index.html"><img src="img\logo.png" class="logo"></a>
 				</div>
 			</div>
 		</div>
@@ -1847,17 +140,17 @@ $(document).ready(function (){
 			<span class="links">
 				<ul class="noPaddingStart" data-animation="pulse" data-delay="5000ms">
 					<span class="menu-element wrapper"><li class="menulinks"><a
-							href="#about" class="effect-underline">About Us</a></li></span>
+							href="index.html#about" class="effect-underline">About Us</a></li></span>
 					<span class="menu-element wrapper"><li class="menulinks"><a
-							href="#stylists" class="effect-underline">Stylists</a></li></span>
+							href="index.html#stylists" class="effect-underline">Stylists</a></li></span>
 
 					<span class="menu-element wrapper effect-underlineN"><li class="menulinks dropdown"><span class="dropdown">
-					<a href="#services" id="dropdownMenuLink" >Services <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-						<a class="dropdown-item noLetterSpacing" href="#services">Overview</a>
+					<a href="#services" id="dropdownMenuLink">Services <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item noLetterSpacing" href="index.html#services">Overview</a>
 						<div class="dropdown-divider"></div>
-    						<a class="dropdown-item noLetterSpacing" href="#services">Colour</a>
-    						<a class="dropdown-item noLetterSpacing" href="#services">Extensions</a>
-    						<a class="dropdown-item noLetterSpacing" href="#services">Styling</a>
+    						<a class="dropdown-item noLetterSpacing" href="colour.html#colour">Colour</a>
+    						<a class="dropdown-item noLetterSpacing" href="extensions.html#extensions">Extensions</a>
+    						<a class="dropdown-item noLetterSpacing" href="styling.html#styling">Styling</a>
   						</div>
 					</a>
 
@@ -1865,9 +158,11 @@ $(document).ready(function (){
 
 
 					<span class="menu-element wrapper"><li class="menulinks"><a
-							href="#gallery" class="effect-underline">Gallery</a></li></span>
+							href="index.html#reviews" class="effect-underline">Reviews</a></li></span>
 					<span class="menu-element wrapper"><li class="menulinks"><a
-							href="#contact" class="effect-underline">Contact Us</a></li></span>
+							href="index.html#gallery" class="effect-underline">Gallery</a></li></span>
+					<span class="menu-element wrapper"><li class="menulinks"><a
+							href="index.html#contact" class="effect-underline">Contact Us</a></li></span>
 				</ul>
 			</span>
 
@@ -1887,26 +182,28 @@ $(document).ready(function (){
 	<nav class="navbar navbar-light bg-light mobilemenu">
 		<a class="navbar-brand" href="#"></a>
 		<button class="navbar-toggler collapsed" type="button"
-			data-toggle="collapse" data-target="#navbarsExample01"
-			aria-controls="navbarsExample01" aria-expanded="false"
+			data-toggle="collapse" data-target="#navbars"
+			aria-controls="navbars" aria-expanded="false"
 			aria-label="Toggle navigation" id="hamburger">
 			<span class="icon-bar top-bar"></span> <span
 				class="icon-bar middle-bar"></span> <span
 				class="icon-bar bottom-bar"></span>
 		</button>
 
-		<div class="collapse navbar-collapse" id="navbarsExample01">
+		<div class="collapse navbar-collapse" id="navbars">
 			<ul class="navbar-nav center-image">
 				<li class="menu-element"><a class="menulinks nav-link" 
-					href="#about">About Us</a></li>
+					href="index.html#about">About Us</a></li>
 				<li class="menu-element"><a class="menulinks nav-link"
-					href="#stylists">Stylists</a></li>
+					href="index.html#stylists">Stylists</a></li>
 				<li class="menu-element"><a class="menulinks nav-link"
-					href="#services">Services</a></li>
+					href="index.html#services">Services</a></li>
 				<li class="menu-element"><a class="menulinks nav-link"
-					href="#gallery">Gallery</a></li>
+					href="index.html#reviews">Reviews</a></li>
 				<li class="menu-element"><a class="menulinks nav-link"
-					href="#contact">Contact Us</a></li>
+					href="index.html#gallery">Gallery</a></li>
+				<li class="menu-element"><a class="menulinks nav-link"
+					href="index.html#contact">Contact Us</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -1920,7 +217,7 @@ $(document).ready(function (){
 
 
 	<section id="about" class="noPaddingTop">
-		<div class="owl-carousel owl-theme image-slider">
+		<div class="owl-about-us-slide owl-carousel owl-theme image-slider">
 
 			<!--About slide 1-->
 			<div
@@ -1935,23 +232,23 @@ $(document).ready(function (){
 					</div>
 
 					<div class="item about-text-width1" style="float: left;">
-						<div class="about-text"> <!--effect-shinea"-->
+						<div class="about-text fade-inaa"> <!--effect-shinea"-->
 							<!--data-animation-out="animate-out fadeOutDown" -->
 							<br /> <br />
-							<p data-animation-in="fadeInUp" data-delay="3100ms"
+							<p data-animation-in="zoomIn"
 								class="quoteTextAbout2">
 								You're here because of your hair.
 							</p>
 							<br /> <br /> 
-							<p data-animation-in="fadeInUp" data-delay="2300ms"
-								class="quoteTextAbout2">
+							<p 
+								class="quoteTextAbout2" data-animation-in="zoomIn">
 								You've never been totally in love with it.<br />
 								<br />Or your best friend told you about us.<br />
 								<br />Maybe you just woke up this morning and decided you want
 									a makeover.
 							</p>
 							<br /> <br /> 
-							<p data-animation-in="fadeInUp" data-delay="1500ms"
+							<p data-animation-in="zoomIn"
 								class="quoteTextAbout2">
 								Or you've heard that we're amazing at what we do.
 							</p>
@@ -1984,18 +281,18 @@ $(document).ready(function (){
 
 				    <div class="about-text-width2" style="float: left;">
 					<div class="item">
-						<div class="about-text"> <!--effect-shinea"-->
+						<div class="about-text fade-inaa"> <!--effect-shinea"-->
 							<!--data-animation-out="animate-out fadeOutDown" -->
 							<br /> <br /> 
-							<p data-animation-in="fadeInUp"
-									data-delay="3100ms" class="quoteTextAbout2">
+							<p data-animation-in="zoomIn"
+									class="quoteTextAbout2">
 									<!--We care about your hair.-->LMK Hair is a unisex salon in
 									Whitehead, Carrickfergus.
 								</p> <br /> <br /> <br />
-								<p data-animation-in="fadeInUp" data-delay="2300ms"
+								<p data-animation-in="zoomIn"
 									class="quoteTextAbout2">We offer Color Treatments,
 									Extensions, Cuts and Styling for women, children and men.</p> <br /> <br /> <br />
-								<p data-animation-in="fadeInUp" data-delay="1500ms"
+								<p data-animation-in="zoomIn"
 									class="quoteTextAbout2">We are Hair Extension Specialists and use Grade 7a and Luxury russian extensions.</p>
 						</div>
 					</div>
@@ -2042,32 +339,32 @@ $(document).ready(function (){
 		<div class="row">
 			<div class="flexBoxStyle">
 				<div class="col-sm-4 animated slideInLeft">
-					<img src="30124122_1687085001327593_4145248945129390080_n.jpg"
+					<img src="img\30124122_1687085001327593_4145248945129390080_n.jpg"
 						class="img-responsive">
 				</div>
 				<div class="col-sm-6 animated slideInRight">
 					<span class="center-image"> <b class="stylistName">Claire</b><br />
-						<br />10 years exerience working as a stylist, previously at
-						Hairtopia. 
+						<br />Claire opened LMK Hair in 2017.  She has 10 years experience as a stylist, previously working at Hairtopia.<br /><br />She specialises in Extensions and also does colouring and styling. Check out the extensions section of our <a href="index.html#gallery">gallery</a> to see before and after results, or read some of our <a href="index.html#reviews">reviews</a> from clients who have had extensions fitted.<br /><br />Pm or give the salon a call to make an appointment for getting extensions.
 				</div>
 			</div>
 		</div>
 
 		<br />
+		<div class="stylistDivider"></div>
 
 		<div class="row">
 			<div class="flexBoxStyle">
 				<div class="col-sm-4 animated slideInLeft">
-					<img src="51775196_562604380818311_2589092112360275968_n.jpg"
+					<img src="26993937_985128838318990_2236300663008993296_n.jpg"
 						class="img-responsive">
 				</div>
 				<div class="col-sm-6 animated slideInRight">
 					<b class="stylistName">Charlize</b><br /> <br />Charlize
 					specialises in upstyles and has an impressive portfolio.<br />
-					Upstyles are perfect for weddings formals or nights out. Pm or give
+					Upstyles are perfect for weddings, formals or nights out.<br /><br />Pm or give
 					the salon a call for our Upstyle offers and formal packages.
 					<br /><br />
-					<p class="center-image"><a href="https://www.facebook.com/Hairbycharlize-391296681373208" target="_blank" class="btn btn-outline-primary">Hairbycharlize on &nbsp;<span class="fb-icon-gallery"><img src="facebook.png" alt="facebook"></span></a></p>
+					<p class="center-image"><a href="https://www.facebook.com/Hairbycharlize-391296681373208" target="_blank" class="btn btn-fb"><span class="btn-fb-text">Hairbycharlize on &nbsp;</span><span class="fb-icon-gallery"><img src="img\facebook.png" alt="facebook"></span></a></p>
 
 				</div>
 			</div>
@@ -2112,7 +409,7 @@ $(document).ready(function (){
 
 					<div class="services-item col-lg-4 col-md-6" data-animate="fadeInUp">
 						<div class="myServices">
-							<a href="#mywork-masonry2" target="_blank"><img src="color.jpg"
+							<a href="#mywork-masonry2" target="_blank"><img src="img\color.jpg"
 								alt="" class="img-fluid">
 								<div class="myserviceoverlay">
 									<div class="inner">
@@ -2150,10 +447,10 @@ $(document).ready(function (){
 
 					<div class="services-item col-lg-4 col-md-6" data-animate="fadeInUp">
 
-						<div class="myServices">
+						<div class="myServices transformTop">
 							<a href="#mywork-masonry2" target="_blank"><img
-								src="48360394_2219945291550610_1317015291405795328_n.jpg" alt=""
-								class="img-fluid">
+								src="img\48360394_2219945291550610_1317015291405795328_n.jpg" alt=""
+								class="img-fluid ">
 								<div class="myserviceoverlay">
 									<div class="inner">
 										<h3 class="h4 mywork-title2">EXTENSIONS</h3>
@@ -2177,7 +474,7 @@ $(document).ready(function (){
 								</div>
 								<br /> <br />
 								<div class="Aligner">
-									<img src="41654564_492940754451341_7373506167651172352_o.jpg"
+									<img src="img\41654564_492940754451341_7373506167651172352_o.jpg"
 										class="gallery-image Aligner-item--fixed"
 										style="width: 50%; max-width: 700px; padding-bottom: 20px;">
 								</div>
@@ -2192,7 +489,7 @@ $(document).ready(function (){
 					<div class="services-item col-lg-4 col-md-6" data-animate="fadeInUp">
 						<div class="myServices">
 							<a href="#mywork-masonry2" target="_blank"><img
-								src="47386491_527727754305974_3521063572794769408_o.jpg" alt=""
+								src="img\47386491_527727754305974_3521063572794769408_o.jpg" alt=""
 								class="img-fluid">
 								<div class="myserviceoverlay">
 									<div class="inner">
@@ -2250,43 +547,43 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 
 			<br /> <br />
 			<div class="center-image">
-				<b class="stylistName">Products that we use</b>
+				<b class="stylistName" data-animate="fadeInUp">Products that we use</b>
 				<br /> <br />
 
 
 					<div class="row">
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="majiriel.png"><br /> <b>MAJIREL</b><br />
+							<img src="img\majiriel.png"><br /> <b>MAJIREL</b><br />
 							Permanent colour<br /> <br />
 						</div>
 
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="dia.png"><br /> <b>DIA</b><br /> Semi-permanent
+							<img src="img\dia.png"><br /> <b>DIA</b><br /> Semi-permanent
 							colour<br /> <br />
 						</div>
 
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="blonde.png"><br /> <b>BLONDE BOUTIQUE</b><br />
+							<img src="img\blonde.png"><br /> <b>BLONDE BOUTIQUE</b><br />
 							Blonde colour techniques<br /> <br />
 						</div>
 
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="smartbond.png"><br /> <b>SMARTBOND</b><br />
+							<img src="img\smartbond.png"><br /> <b>SMARTBOND</b><br />
 							Strengthening<br /> <br />
 						</div>
 
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="serie.png"><br /> <b>SERIE EXPERT</b><br />
+							<img src="img\serie.png"><br /> <b>SERIE EXPERT</b><br />
 							Professional haircare<br /> <br />
 						</div>
 
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="tecni.png"><br /> <b>TECNI ART</b><br /> Salon
+							<img src="img\tecni.png"><br /> <b>TECNI ART</b><br /> Salon
 							styling<br /> <br />
 						</div>
 
 						<div class="col-sm-3" data-animate="fadeInUp">
-							<img src="steampod.png"><br /> <b>STEAMPOD</b><br />
+							<img src="img\steampod.png"><br /> <b>STEAMPOD</b><br />
 							Professional hair straightening<br /> <br />
 						</div>
 					</div>
@@ -2296,7 +593,7 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 				<div data-animate="fadeInUp">
 					<a
 					href="https://hairdressers-near-me.lorealprofessionnel.co.uk/1227710-lmk-unisex-hair"><img
-					src="loreal-pro-logo.svg" class="loreal"></a>
+					src="img\loreal-pro-logo.svg" class="loreal"></a>
 				<!--/span-->
 				</div>
 
@@ -2309,28 +606,28 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 
 
 
-	<section id="testimonials"
-		style="background: url(&quot;Scissors.jpg&quot;);">
+	<section id="reviews"
+		style="background: url(&quot;img/Scissors.jpg&quot;);">
 		<div class="center-image whiteText">
 			<br />
-			<h2 class="titleText animated slideInDown delay-2s">CLIENTS</h2>
+			<h2 class="titleText animated slideInDown delay-2s">REVIEWS</h2>
 		</div>
 		<br />
-		<div class="owl-carousel owl-theme image-slider">
+		<div class="owl-reviews-slide owl-carousel owl-theme image-slider">
 
 
-			<!--Testimonial slide 1-->
+			<!--Review slide 1-->
 			<div class="row justify-content-center">
-				<div class="col-8 reviewMobileWidth">
+				<div class="col-8 testimonialMobileWidth">
 
 					<li class="textslide">
 						<div class="row">
-							<p class="testimonialImg col-sm-2">
-								<img
-									src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/49407195_10156894108317692_3241166751752257536_n.jpg?_nc_cat=108&_nc_ht=scontent-lhr3-1.xx&oh=a1f42d0d7167cb29954cc87ceb57b1d7&oe=5CF1626C">
+							<p class="testimonialImg col-sm-2" data-animation-in="zoomIn">
+								<a href="https://www.facebook.com/nikki.mcauley" target="_blank"><img
+									src="img\49407195_10156894108317692_3241166751752257536_n.jpg"></a>
 							</p>
-							<p class="col-sm-10 whiteText" data-animation-in="fadeInUp"
-								data-delay="3100ms">Got a weave in off another girl that
+							<p class="col-sm-10 whiteText" data-animation-in="zoomIn"><!--data-animation-out="animate-out fadeOut"-->
+								Got a weave in off another girl that
 								does extensions, the girl put far too much hair in and didn’t
 								take into consideration how fine my own hair was to start with,
 								I went to Claire to get my roots done and my weave refitted and
@@ -2348,15 +645,15 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 
 
 
-			<!--Testimonial slide 2-->
+			<!--Review slide 2-->
 			<div class="row justify-content-center">
-				<div class="col-8 reviewMobileWidth">
+				<div class="col-8 testimonialMobileWidth">
 					<div class="row">
-						<p class="testimonialImg col-sm-2">
-							<img src="47425092_1207800249377442_4879488001110966272_n.png">
+						<p class="testimonialImg col-sm-2" data-animation-in="zoomIn">
+							<a href="https://www.facebook.com/holly.ritchie.31" target="_blank"><img src="img\47425092_1207800249377442_4879488001110966272_n.png"></a>
 						</p>
-						<p class="col-sm-10 whiteText" data-animation-in="fadeInUp"
-							data-delay="3100ms">I cannot recommend Claire enough! She’s
+						<p class="col-sm-10 whiteText" data-animation-in="zoomIn">
+							I cannot recommend Claire enough! She’s
 							so talented at what she does. I went to Claire to get extensions
 							fitted and get my colour corrected as my last hair dresser made a
 							mess of my hair. I can’t believe the difference in my hair, my
@@ -2370,16 +667,16 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 
 
 
-			<!--Testimonial slide 3-->
+			<!--Review slide 3-->
 			<div class="row justify-content-center">
-				<div class="col-8 reviewMobileWidth">
+				<div class="col-8 testimonialMobileWidth">
 					<div class="row">
-						<p class="testimonialImg col-sm-2">
-							<img
-								src="https://scontent-lhr3-1.xx.fbcdn.net/v/t1.0-9/48360394_2219945291550610_1317015291405795328_n.jpg?_nc_cat=109&_nc_ht=scontent-lhr3-1.xx&oh=2f3fc1d7b24a336906b84c7e7e5c5f49&oe=5CE2B8AC">
+						<p class="testimonialImg col-sm-2" data-animation-in="zoomIn">
+							<a href="https://www.facebook.com/kristen.kavanagh.395" target="_blank"><img
+								src="img\48360394_2219945291550610_1317015291405795328_n.jpg"></a>
 						</p>
-						<p class="col-sm-10 whiteText" data-animation-in="fadeInUp"
-							data-delay="3100ms">LMK were very kind to sponsor me with
+						<p class="col-sm-10 whiteText" data-animation-in="zoomIn">
+							LMK were very kind to sponsor me with
 							Hair Extensions (Bonds) for the Galaxy International Pageant. My
 							hair looks and feels amazing, even in Humid Heat! Definitely
 							recommend if your looking for lush hair</p>
@@ -2437,22 +734,20 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 							<div class="mywork">
 								<a
 									href="#mywork-masonry"
-									target="_blank"><img src="color.jpg" alt=""
+									target="_blank"><img src="img\color.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div data-images="salon.jpg" class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="salon.jpg" class="gallery-image Aligner-item--fixed"
+										<img src="img\salon.jpg" class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
 									<p class="text-center">The beautiful Karly Sloan. From all
 										over copper brown to this 👇</p>
 									<p class="buttons text-center">
-										<a
-											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/415371295541621/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+										<a 	href="https://www.facebook.com/333877740357644/photos/a.336940576718027/415371295541621/?type=3&theater"
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2466,14 +761,14 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 								<a
 									href="#mywork-masonry"
 									target="_blank"><img
-									src="45691826_514914975587252_2532359395426172928_o.jpg" alt=""
+									src="img\45691826_514914975587252_2532359395426172928_o.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div
 									data-images="45691826_514914975587252_2532359395426172928_o.jpg"
 									class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="45691826_514914975587252_2532359395426172928_o.jpg"
+										<img src="img\45691826_514914975587252_2532359395426172928_o.jpg"
 											class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
@@ -2482,11 +777,10 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 										bonds... blended with three shades of mixed blond to create a
 										natural look ❤️</p>
 									<p class="buttons text-center">
-										<a
-											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/514914968920586/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+									<a 
+href="https://www.facebook.com/333877740357644/photos/a.336940576718027/514914968920586/?type=3&theater"
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2499,14 +793,14 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 								<a
 									href="#mywork-masonry"
 									target="_blank"><img
-									src="45491618_515906362154780_5591480208831021056_o.jpg" alt=""
+									src="img\45491618_515906362154780_5591480208831021056_o.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div
 									data-images="45491618_515906362154780_5591480208831021056_o.jpg"
 									class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="45491618_515906362154780_5591480208831021056_o.jpg"
+										<img src="img\45491618_515906362154780_5591480208831021056_o.jpg"
 											class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
@@ -2515,9 +809,8 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 									<p class="buttons text-center">
 										<a
 											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/515906358821447/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2531,14 +824,14 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 								<a
 									href="#mywork-masonry"
 									target="_blank"><img
-									src="28516070_382072342204850_1943834541320142797_o.jpg" alt=""
+									src="img\28516070_382072342204850_1943834541320142797_o.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div
 									data-images="28516070_382072342204850_1943834541320142797_o.jpg"
 									class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="28516070_382072342204850_1943834541320142797_o.jpg"
+										<img src="img\28516070_382072342204850_1943834541320142797_o.jpg"
 											class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
@@ -2547,9 +840,8 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 									<p class="buttons text-center">
 										<a
 											href="https://www.facebook.com/333877740357644/photos/a.333879817024103/382072342204850/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2563,14 +855,14 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 								<a
 									href="#mywork-masonry"
 									target="_blank"><img
-									src="47386491_527727754305974_3521063572794769408_o.jpg" alt=""
+									src="img\47386491_527727754305974_3521063572794769408_o.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div
 									data-images="47386491_527727754305974_3521063572794769408_o.jpg"
 									class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="47386491_527727754305974_3521063572794769408_o.jpg"
+										<img src="img\47386491_527727754305974_3521063572794769408_o.jpg"
 											class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
@@ -2579,9 +871,8 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 									<p class="buttons text-center">
 										<a
 											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/527727747639308/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2595,14 +886,14 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 								<a
 									href="#mywork-masonry"
 									target="_blank"><img
-									src="48350188_531589090586507_5000576735641600000_o.jpg" alt=""
+									src="img\48350188_531589090586507_5000576735641600000_o.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div
-									data-images="48350188_531589090586507_5000576735641600000_o.jpg"
+									data-images="img\48350188_531589090586507_5000576735641600000_o.jpg"
 									class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="48350188_531589090586507_5000576735641600000_o.jpg"
+										<img src="img\48350188_531589090586507_5000576735641600000_o.jpg"
 											class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
@@ -2611,9 +902,8 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 									<p class="buttons text-center">
 										<a
 											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/531589087253174/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2627,14 +917,14 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 								<a
 									href="#mywork-masonry"
 									target="_blank"><img
-									src="43669124_503800113365405_3264518858307796992_o.jpg" alt=""
+									src="img\43669124_503800113365405_3264518858307796992_o.jpg" alt=""
 									class="img-fluid">
 									<div class="overlay"></div></a>
 								<div
-									data-images="43669124_503800113365405_3264518858307796992_o.jpg"
+									data-images="img\43669124_503800113365405_3264518858307796992_o.jpg"
 									class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="43669124_503800113365405_3264518858307796992_o.jpg"
+										<img src="img\43669124_503800113365405_3264518858307796992_o.jpg"
 											class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
@@ -2647,9 +937,9 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 									<p class="buttons text-center">
 										<a
 											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/503800110032072/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit
+											us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2662,11 +952,11 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 							<div class="mywork">
 								<a
 									href="#mywork-masonry"
-									target="_blank"><img src="ch1.jpg" alt="" class="img-fluid">
+									target="_blank"><img src="img\ch1.jpg" alt="" class="img-fluid">
 									<div class="overlay"></div></a>
 								<div data-images="ch1.jpg" class="sr-only mywork-description">
 									<div class="Aligner">
-										<img src="ch1.jpg" class="gallery-image Aligner-item--fixed"
+										<img src="img\ch1.jpg" class="gallery-image Aligner-item--fixed"
 											style="width: 100%; max-width: 700px; padding-bottom: 20px;">
 									</div>
 									<p class="text-center">Charlize specialises in upstyles and
@@ -2674,9 +964,8 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 									<p class="buttons text-center">
 										<a
 											href="https://www.facebook.com/333877740357644/photos/a.336940576718027/562604374151645/?type=3&theater"
-											target="_blank" class="btn btn-outline-primary">View
-											this on &nbsp;<span class="fb-icon-gallery"><img
-												src="facebook.png" alt="facebook"></span>
+											target="_blank" class="btn btn-fb"><span class="btn-fb-text">Visit us on&nbsp;</span><span class="fb-icon-gallery"><img
+												src="img\facebook.png" alt="facebook"></span>
 										</a>
 									</p>
 								</div>
@@ -2699,21 +988,28 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 
 
 	<section id="contact" class="center-image bg-grey noPaddingBottom">
-		<div >
+		<div>
 			<h2 class="titleText animated slideInDown delay-2s">CONTACT US</h2>
-			<div data-animate="fadeInUp">We'd love to hear from you.<br />Call us now for a chat or to make
-			an appointment.</div><br />
+			<div data-animate="fadeInUp"><span class="contact1"><br />We'd love to hear from you</span><br /><br />Call us now for a chat or to make
+			an appointment.<br/><br />Connect with us on Messenger for more information.</div><br />
 			<br />
 
 			<div data-animate="fadeInUp">
 				<span class="fb-icon icon-margin-right"> <a
 					href="https://www.facebook.com/LMK-unisex-salon-hair-extension-specialists-333877740357644/"
 					target="_blank"> <img
-						src="facebook.png" alt="facebook">
+						src="img\facebook.png" alt="facebook">
 				</a>
+				</span> 
+				<span class="fb-icon icon-margin-right"> <a
+					href="https://m.me/LMK-unisex-salon-hair-extension-specialists-333877740357644/" target="_blank"
+					> <img src="img\messenger.png"
+						alt="messenger">
+				</a>
+				</span>
 				</span> <span class="ig-icon"> <a
 					href="https://instagram.com/claire.dunlop.58/" target="_blank"
-					> <img src="instagram.png"
+					> <img src="img\instagram.png"
 						alt="instagram">
 				</a>
 				</span>
@@ -2722,26 +1018,44 @@ Ask for the steampod on your next visit to the salon for that extra long lasting
 			<br />
 
 			<div class="row">
-				<div class="col-sm-6" data-animate="fadeInUp">
-					<div class="phonenum marginBelowLandscape">
+				<div class="col-sm-4 contactBox" data-animate="fadeInUp">
+					<div class="contactContainer">
+					<div class="contactOutline"><img src="img\location.svg"><br />
+						1b Slaughterford Road<br />Whitehead<br />BT38 9TG<br />(at the Bentra)
+					</div>
+					</div>
+				</div>
+
+				<div class="col-sm-4 contactBox" data-animate="fadeInUp">
+					<div class="contactContainer">
+					<div class="contactOutline contactVerticalCenterContainer">
+						<div class="alignVerticalCenter">
 						<a href="tel:02893 039543" class="phonenumberBlack"> <img
-							src="phoneBlack.svg" class="phoneimg"> <span
+							src="img\phoneBlack.svg" class="phoneimg"> <span
 							class="phoneTextSize">02893 039543</span>
 						</a>
+						</div>
 					</div>
-					<br /> 1b Slaughterford Road,<br />Whitehead <br />BT38 9TG<br />(at
-					the Bentra)<br />
-					<br />
-				</div>
+					</div>
+				</div><br /><br />
 
-				<div class="col-sm-6" data-animate="fadeInUp">
-					<h5>Opening Times</h5>
-					<p class="lineMargin">Monday to Friday: 9am to 5pm</p>
-					<p>Saturday & Sunday: Closed</p>
-					<br />
-				</div>
-			</div>
+				<div class="col-sm-4 contactBox" data-animate="fadeInUp">
+					<div class="contactContainer">
+					<div class="contactOutline"><img src="img\clock.svg"<br />
+						<h5>Opening Times</h5>
+						<p class="lineMargin">Monday to Friday : <span class="autoLinebreak">9am to 5pm</span></p>
+						Saturday & Sunday : <span class="linebreak">Closed</span>
+					</div>
+					</div>
+				</div><br />
+			</div><br />
 
+
+
+<!--facebook page plugin-->
+<iframe src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/LMK-unisex-salon-hair-extension-specialists-333877740357644&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+<br /><br />
 
 
 			<div class="row">
